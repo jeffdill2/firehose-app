@@ -1,0 +1,17 @@
+<div class="stolen-frosty span9 offset2 text-center">
+	<h1 class="stolen-h1">
+		Lesson: <%= @pic.lesson %>
+	</h1>
+
+	<%= image_tag @pic.image %>
+
+	<h2>
+		I Felt: <%= @pic.emotion %>
+	</h2>
+
+	<h2>
+		I Learned: <%= @pic.learned %>
+	</h2>
+
+	<%= link_to 'Back', pics_path, :class => 'btn btn-warning btn-large' %>
+</div>

@@ -6,8 +6,9 @@
 		
 		<br/>
 
-
-		<%= image_tag pic.image %>
+		<%= link_to pic_path(pic) do %>
+			<%= image_tag pic.image %>
+		<% end %>
 
 
 		<h2>

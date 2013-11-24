@@ -10,6 +10,10 @@ class PicsController < ApplicationController
 		end
 	end
 
+	def show
+		@pic = Pic.find(params[:id])
+	end
+
 	def new
 		@pic = Pic.new
 	end
