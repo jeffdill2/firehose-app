@@ -13,6 +13,7 @@
 		I Learned: <%= @pic.learned %>
 	</h2>
 
-	<%= link_to 'Back', pics_path, :class => 'btn btn-warning btn-large' %>
+	<%= link_to 'Back', pics_path, :class => 'btn btn-success btn-large' %>
 	<%= link_to 'Delete', pic_path(@pic), :method => :delete, :class => 'btn btn-large btn-danger', :confirm => 'You sure you want to delete this?' %>
+	<%= link_to 'Edit', edit_pic_path(@pic), :class => 'btn btn-large btn-warning' %>
 </div>
